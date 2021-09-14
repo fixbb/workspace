@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            /* 将所有的元素的边距置为0 */
+        }
+        .item {
+            /* width: 200px;
+            height: 136px; */
+            float: left;
+            margin: 20px;
+            border: 5px solid black;
+            padding: 15px;/* 内边距 */
+        }
+        #box {
+            width: 750px;
+            margin: auto;
+            /* 让父元素自动设置边距，左右边距相等，即可达到居中效果，水平方向有效 */
+            overflow: auto;
+            /* padding: 15px; */
+        }
+        .item img {
+            margin: 15px;
+            width: 200px;
+            height: 60%;
+        } 
+       
+    </style>
+</head>
+
+<body>
+    <!-- 填充：就是向一个元素的内部，增加空间，也可以称之为内边距，和外边距不同的是，填充会改变元素大小。随着填充的增加，元素会被撑大。 -->
+    <div id="box">
+        <div class="item">
+            <img src="./imgs/3合1-新鲜水果_3.jpg">
+            图片
+        </div>
+        <div class="item">
+            <img src="./imgs/3合1-新鲜水果_1.jpg">
+            图片
+        </div>
+        <div class="item">
+            <img src="./imgs/3合1-新鲜水果_2.jpg">
+            图片
+        </div>
+    </div>
+
+</body>
+
+</html>

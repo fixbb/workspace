@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        /* 头部横幅 */
+        #header {
+            height: 50px;
+            background: orange;
+        }
+        #header .head {
+            width: 1005px;
+            height: 50px;
+            background: gray;
+            margin: auto;
+        }
+        #header .head .item {
+            line-height: 50px;
+            height: 50px;
+            margin-left: 30px;
+            margin-right: 20px;
+            float: left;
+            overflow: auto;
+        }
+        #header .head .item p {
+            font-size: 30px;
+            color: floralwhite;
+        }
+        #header .head .item a {
+            margin-left: 15px;
+            margin-right: 15px;
+            color: floralwhite;
+        }
+        #banner {
+            height: 500px;
+            background: slateblue url('./img/唐嫣.jpg');
+        }
+        #category {
+            width: 1005px;
+            height: 200px;
+            margin: auto;
+        }
+        #category .item {
+            width: 125px;
+            height: 165px;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-bottom: 25px;
+            padding-top: 10px;
+            border-right: 1px dashed black;
+            float: left;
+        }
+        #category .item.first {
+            padding-left: 0;
+        }
+        #category .item.last {
+            padding-right: 0;
+            border: 0;
+        }
+        #category .item img {
+            width: 125px;
+            height: 125px;
+            margin: auto;
+        }
+        #category p {
+            font-size: 20px;
+            text-align: center;
+        }
+        #case {
+            height: 490px;
+            background: #eeeeee;
+        }
+        #case .title-text {
+            width: 1005px;
+            margin: auto;   /* 水平居中 */
+            padding-top: 20px;  /* 上填充（内边距） */
+            padding-bottom: 10px;   /* 下填充（内边距） */
+            font-size: 45px;
+        }
+        #case .item-wrapper {
+            width: 1000px;
+            margin: auto;   /* 水平居中 */
+            overflow: auto; /* 自动设置高度，防止元素浮动而高度塌陷 */
+        }
+        #case .item-wrapper .item {
+            width: 320px;
+            height: 330px;
+            background: #9ACD32;
+            float: left;
+        }
+        #case .item-wrapper .item.mg {
+            margin-left: 20px;  /* 外边距设置 */
+            margin-right: 20px;
+        }
+        #case p {
+            width: 1005px;
+            margin: 15px auto 0 auto;
+            height: 45px;   /* 行高和高度一致时，文字垂直居中 */
+            line-height: 45px;
+            text-align: center;
+            font-size: 30px;
+            color: dimgray;
+        }
+        #case img {
+            width: 320px;
+            height: 330px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="head">
+            <div class="item">
+                <p>BEANCMS</p>
+            </div>
+            <div class="item">
+                <a href="">首页</a>
+                <a href="">关于我们</a>
+                <a href="">我们的服务</a>
+                <a href="">客户定制</a>
+                <a href="">联系我们</a>
+            </div>
+            <div class="item">
+                <p>QQ || 手机号</p>
+            </div>
+        </div>
+    </div>
+    <div id="banner">
+
+    </div>
+    <div id="category">
+        <div class="item first">
+            <img src="./img/动漫图.jpg">
+            <p>动漫图</p>
+        </div>
+        <div class="item">
+            <img src="./img/可爱.jpg">
+            <p>可爱</p>
+        </div>
+        <div class="item">
+            <img src="./img/唐嫣.jpg">
+            <p>唐嫣</p>
+        </div>
+        <div class="item">
+            <img src="./img/御姐.jpg">
+            <p>御姐</p>
+        </div>
+        <div class="item">
+            <img src="./img/狂野.jpg">
+            <p>狂野</p>
+        </div>
+        <div class="item last">
+            <img src="./img/程潇.jpg">
+            <p>程潇</p>
+        </div>
+    </div>
+    <div id="case">
+        <div class="title-text">
+            Case
+        </div>
+        <div class="item-wrapper">
+            <div class="item">
+                <img src="./img/御姐.jpg">
+            </div>
+            <div class="item mg">
+                <img src="./img/唐嫣.jpg">
+            </div>
+            <div class="item">
+                <img src="./img/程潇.jpg">
+            </div>
+        </div>
+        <p>查看更多+</p>
+    </div>
+</body>
+</html>

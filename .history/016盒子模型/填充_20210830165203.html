@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;/* 将所有的元素的边距置为0 */
+        }
+        .y {
+            width: 300px;
+            height: 300px;
+            float: left;
+            margin: 20px;
+            border: 5px solid black;
+        }
+        .y img {
+            margin: 5px;
+        }
+        #box {
+            width: 1200px;
+            margin: auto;
+            overflow: auto; /* 让父元素自动设置边距，左右边距相等，即可达到居中效果，水平方向有效 */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div class="y">
+            <img src="/016盒子模型/imgs/1.jpg">
+        </div>
+        <div class="y">
+            <img src="/016盒子模型/imgs/1.jpg">
+        </div>
+        <div class="y">
+            <img src="/016盒子模型/imgs/1.jpg">
+        </div>
+    </div>
+
+</body>
+
+</html>

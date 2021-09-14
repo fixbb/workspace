@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a {
+            width: 20%;
+            background: orange;
+        }
+
+        .b {
+            width: 60%;
+            background: red;
+        }
+
+        .c {
+            width: 20%;
+            background: green;
+        }
+
+        .a,
+        .b,
+        .c {
+            float: left;
+            height: 200px;
+        }
+
+        .h {
+            height: 300px;
+            background: black;
+        }
+
+        .hh {
+            height: 200px;
+            background: white;
+            
+        }
+
+        ul {
+            width: 50px;
+            height: 60px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+        }
+
+        li {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 编写完一个横排的三个元素，占满一个横排后，
+        若是继续编写接下来的元素，会出现一个问题：由于这三个元素是浮动的，
+        后来的元素就会被这三个元素遮挡。 -->
+    <!-- 解决方法：为三个浮动的元素套上一个不浮动的父级元素，就可以避免横排的浮动元素，会遮盖后来的元素，
+        但父元素一定要设置高度，因为父元素里的子元素对于父元素依旧是浮动的，所以子元素无法自动撑开父元素。
+        当然，也可以为父元素增加一个样式overflow:auto，overflow表示溢出的意思,对超出边界的元素，父元素可以做自动的调整。
+        第二种方法就是为包含浮动子元素的父元素后面的元素增加样式clear: left/right/both，
+        意思是：我们不希望当前元素受到前面元素的(左/右/左右两者)浮动影响 
+    -->
+    <div class="hh">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+    </div>
+    <div class="h"></div>
+
+
+</body>
+
+</html>

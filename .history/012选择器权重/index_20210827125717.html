@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器权重</title>
+    <style>
+        a{color: yellow;}
+
+        div a{color: green;}
+
+        .demo a{color: black;}
+
+        #demo a{color: orange;}
+
+        div#demo a{color: red;}
+    </style>
+</head>
+<body>
+    <a href="">应该是黄色</a>
+    <div class="demo">
+        <a href="">应该是黑色</a>
+    </div>
+    <div id="demo">
+        <a href="">应该是红色</a>
+    </div>
+</body>
+</html>
