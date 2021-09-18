@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        form {
+            background: #9BA61D;
+            padding: 0 15px;
+            margin: 20px auto;
+            width: 350px;
+            border-radius: 15px;
+        }
+        .step {
+            font-size: 14px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .form_line {
+            border-radius: 5px;
+            border-color: #f0f5df;
+            border-width: 2px;
+            border-style: solid;
+            padding: 3px;
+            background-color: #cede95;
+            font-size: 12px;
+            padding-left: 10px;
+        }
+        .form_line span {
+            display: inline-block;
+            width: 110px;
+        }
+        .form_line input {
+            background: white;
+            border: none;
+            height: 20px;
+            border-radius: 3px;
+            width: 180px;
+        }
+        .form_line input[type=radio] {
+            width: 25px;
+            height: 12px;
+        }
+        .form_line textarea {
+            width: 180px;
+            height: 70px;
+            vertical-align: top;
+            border: none;
+            border-radius: 3px;
+        }
+        input.submit-btn {
+            border: none;
+            background-color: #374313;
+            color: white;
+            display: block;
+            width: 100px;
+            padding: 5px 0;
+            border-radius: 20px;
+            margin: 10px auto 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <section>
+            <p class="step">第一步，详细信息</p>
+            <p class="form_line">
+                <span>姓名</span>
+                <input type="text" placeholder="请输入姓名">
+            </p>
+            <p class="form_line">
+                <span>电话</span>
+                <input type="text" placeholder="123456789">
+            </p>
+            <p class="form_line">
+                <span>主页</span>
+                <input type="url">
+            </p>
+        </section>
+        <section>
+            <p class="step">第二步，收货地址</p>
+            <p class="form_line">
+                <span>详细地址</span>
+                <textarea placeholder="随便"></textarea>
+            </p>
+            <p class="form_line">
+                <span>邮编</span>
+                <input type="text">
+            </p>
+        </section>
+        <section>
+            <p class="step">第三步，银行卡信息</p>
+            <p class="form_line">
+                <span>银行卡类型</span>
+                <input type="radio" placeholder="">借记卡
+                <input type="radio" placeholder="">信用卡
+                <input type="radio" placeholder="">VISA卡
+            </p>
+            <p class="form_line">
+                <span>卡号</span>
+                <input type="text" placeholder="">
+            </p>
+            <p class="form_line">
+                <span>密码</span>
+                <input type="password" placeholder="">
+            </p>
+            <p class="form_line">
+                <span>持卡人</span>
+                <input type="text" placeholder="">
+            </p>
+        </section>
+        <p>
+            <input type="submit" class="submit-btn" value="提交">
+        </p>
+    </form>
+</body>
+</html>
